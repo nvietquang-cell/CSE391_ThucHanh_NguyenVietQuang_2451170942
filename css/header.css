@@ -1,0 +1,10 @@
+header .iner-wrap{
+    display:flex;
+}
+header .logo{
+    Color:  #6366f1;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
