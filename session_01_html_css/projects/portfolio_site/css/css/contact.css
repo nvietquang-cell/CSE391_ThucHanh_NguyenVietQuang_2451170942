@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+.contact{
+    height: 600px;
+    background-color: #F8FAFC;
+
+}
+
+.contact .name{
+    font-family: var(--font-main) ;
+    width: 100%;
+    padding-top:50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact .inner-wrap{
+    display:flex;
+}
+
+.contact .inner-wrap .container {
+    width: 50%;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.contact .inner-wrap .container .infor h3{
+    font-family: var(--font-main);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.contact .inner-wrap .container .infor p{
+    color:var(--color-text);
+    margin-bottom: 20px;
+}
+.contact .inner-wrap .container .infor .inner-wrap1{
+    display:flex;
+}
+
+.contact .inner-wrap .container .infor .inner-wrap1 i{
+    color: var(--color-text);
+    margin-right:15px;
+}
+
+.contact .inner-wrap .container .infor .inner-wrap2{
+    display:flex;
+}
+
+.contact .inner-wrap .container .infor .inner-wrap2 i{
+    color: var(--color-text);
+    margin-right:15px;
+}
+
+.contact .inner-wrap .from{
+    width: 50%;
+    margin-top:25px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.contact .inner-wrap .from .container{
+    margin-left:35px;
+    margin-top: 50px;
+}
+
+.contact .inner-wrap .from .container form .fullname{
+    width: 450px;
+    height:40px;
+    border: 2px solid var(--color-dark);
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.contact .inner-wrap .from .container form .email{
+    width: 450px;
+    height:40px;
+    border: 2px solid var(--color-dark);
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+.contact .inner-wrap .from .container form .message{
+    width: 450px;
+    height:120px;
+    border: 2px solid var(--color-dark);
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+.contact .inner-wrap .from .container button{
+    width: 450px;
+    height:40px;
+    background-color: #6366F1;
+    color: white;
+    border-radius: 10px;
+}
+
+.contact .inner-wrap .from .container button:hover{
+    background-color: black;
+    color: #6366F1;
+}
+
+
+
+
+
+
+
+
