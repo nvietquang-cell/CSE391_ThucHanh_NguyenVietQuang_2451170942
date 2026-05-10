@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+
+.skills .container{
+    height: 400px;
+    background-color: #f8fafcbc;
+}
+
+.skills .container .paragraph{
+    display:flex;
+    width: 100%;
+    height:40px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: var(--font-main);
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+.container .container-1 .inner-wrap1{
+    display:flex;
+    justify-content: center;
+}
+
+.container .container-1 .inner-wrap1 .html5{
+    background-color: white;
+    width: 300px;
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    margin-left: 45px;
+}
+.container .container-1 .inner-wrap1 .html5 span{
+    color: black;
+}
+
+.container .container-1 .inner-wrap1 .html5 .space{
+    padding-left: 190px;
+    color: var(--color-secondary);
+}
+
+.container .container-1 .inner-wrap1 .html5 .skills-bar{
+    height: 15px;
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 8px;
+    display: flex;
+}
+
+.container .container-1 .inner-wrap1 .html5 .skills-bar .skills-fill1{
+    height: 20px;
+    width: 95% ;
+    background-color: var(--color-secondary);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.container .container-1 .inner-wrap1 .html5 .skills-bar .skills-fill2{
+    height: 20px;
+    width: 5%;
+    background-color: var(--color-dark);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.container .container-1 .css3{
+    background-color: white;
+    width: 300px;
+    height: 80px;
+    border-radius: 25px;
+    padding-top:20px;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.container .container-1 .css3 span{
+    color:black;
+
+}
+
+.container .container-1 .css3 span .space-1{
+    margin-left: 205px ;
+    color: var(--color-secondary);
+}
+
+.container .container-1 .css3 .skills-bar1{
+    height: 15px;
+    width: 90%;
+    margin-top:10px ;
+    display:flex;
+}
+
+.container .container-1 .css3 .skills-bar1 .skills-fill3{
+    width: 90%;
+    height:20px;
+    background-color: var(--color-secondary);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container .container-1 .css3 .skills-bar1 .skills-fill4{
+    width: 10%;
+    height:20px;
+    background-color: var(--color-dark);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.skills .container .container-1 .inner-wrap-2{
+    display:flex;
+    justify-content: center;
+    margin-top:40px;
+}
+.skills .container .container-1 .inner-wrap-2 .java {
+    background-color:white;
+    width: 300px;
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    margin-left: 45px;
+}
+.skills .container .container-1 .inner-wrap-2 .java span{
+    color:black;
+}
+
+.skills .container .container-1 .inner-wrap-2 .java span .space-2{
+    margin-left: 170px ;
+    color: var(--color-secondary);
+}
+.skills .container .container-1 .inner-wrap-2 .java  .skills-bar2{
+    height: 15px;
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 8px;
+    display: flex;   
+}
+
+.skills .container .container-1 .inner-wrap-2 .java  .skills-bar2 .skills-fill5{
+    width: 85%;
+    height:20px;
+    background-color: var(--color-secondary);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.skills .container .container-1 .inner-wrap-2 .java  .skills-bar2 .skills-fill6{
+    width: 15%;
+    height:20px;
+    background-color: var(--color-dark);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.skills .container .container-1 .inner-wrap-2 .react{
+    width: 300px;
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    margin-left:20px;
+    background-color: white;
+}
+
+.skills .container .container-1 .inner-wrap-2 .react span{
+    color:black;
+}
+
+.skills .container .container-1 .inner-wrap-2 .react span .space-3{
+    margin-left: 200px ;
+    color: var(--color-secondary);
+}
+
+.skills .container .container-1 .inner-wrap-2 .react  .skills-bar3{
+    height: 15px;
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 8px;
+    display: flex;   
+}
+.skills .container .container-1 .inner-wrap-2 .react  .skills-bar3 .skills-fill7{
+    width: 75%;
+    height:20px;
+    background-color: var(--color-secondary);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.skills .container .container-1 .inner-wrap-2 .react  .skills-bar3 .skills-fill8{
+    width: 25%;
+    height:20px;
+    background-color: var(--color-dark);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+
