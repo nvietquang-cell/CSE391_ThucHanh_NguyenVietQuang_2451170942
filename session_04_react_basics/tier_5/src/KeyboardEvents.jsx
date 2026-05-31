@@ -1,0 +1,58 @@
+// Bài 5.3 — Keyboard Events
+// onKeyDown, phím Enter, Escape, mũi tên
+
+import { useState } from "react";
+
+function KeyboardEvents() {
+    const [lastKey, setLastKey] = useState("");
+    const [log, setLog] = useState([]);
+    const [inputValue, setInputValue] = useState("");
+
+    function handleKeyDown(event) {
+        setLastKey(event.key);
+        setLog((prev) => [...prev.slice(-4), event.key]); // Giữ 5 phím cuối
+    }
+
+    function handleInputKeyDown(event) {
+        if (event.key === "Enter") {
+            if (inputValue.trim() !== "") {
+                alert("Bạn nhập: " + inputValue);
+                setInputValue("");
+            }
+        }
+        if (event.key === "Escape") {
+            setInputValue("");
+        }
+    }
+
+    return (
+        <div
+            style={{ padding: "20px" }}
+            onKeyDown={handleKeyDown}
+            tabIndex={0} // Để div có thể nhận focus
+        >
+            <h2>Keyboard Events</h2>
+
+            <p>
+                Phím cuối cùng: <strong>{lastKey || "Chưa nhấn"}</strong>
+            </p>
+            <p>Log: {log.length > 0 ? log.join(" → ") : "(chưa có)"}</p>
+
+            <hr />
+
+            <h3>Nhập và nhấn Enter:</h3>
+            <input
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                onKeyDown={handleInputKeyDown}
+                placeholder="Nhập rồi nhấn Enter..."
+                style={{ padding: "8px", width: "300px" }}
+            />
+            <p style={{ fontSize: "12px", color: "#666" }}>
+                Nhấn Escape để xóa
+            </p>
+        </div>
+    );
+}
+
+export default KeyboardEvents;
