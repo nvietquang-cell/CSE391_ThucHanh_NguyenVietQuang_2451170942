@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quản lý công việc - Bài 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Quản lý công việc</h1>
+    <div>
+      <button id="open-add">Thêm công việc</button>
+    </div>
+  </header>
+
+  <section class="stats">
+    <div>Tổng: <span id="total">0</span></div>
+    <div>Hoàn thành: <span id="done">0</span></div>
+    <div>Chưa hoàn thành: <span id="pending">0</span></div>
+  </section>
+
+  <section>
+    <ul id="tasks-list" class="tasks"></ul>
+  </section>
+
+  <div id="task-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-title">Thêm công việc</h2>
+
+      <form id="task-form">
+
+        <label for="title">Tiêu đề</label><br>
+        <input id="title" required><br><br>
+
+        <label for="desc">Mô tả</label><br>
+        <input id="desc"><br><br>
+
+        <label for="due">Hạn hoàn thành</label><br>
+        <input id="due" type="date"><br><br>
+
+        <label for="priority">Mức ưu tiên</label><br>
+        <select id="priority">
+          <option value="normal">Bình thường</option>
+          <option value="high">Cao</option>
+        </select><br><br>
+
+        <div class="form-actions">
+          <button type="submit">Lưu</button>
+          <button type="button" id="cancel">Hủy</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div id="message" class="message hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
