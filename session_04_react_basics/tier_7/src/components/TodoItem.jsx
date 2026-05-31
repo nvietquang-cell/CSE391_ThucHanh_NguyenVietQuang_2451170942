@@ -1,0 +1,53 @@
+// Tier 7 — Component con: TodoItem
+// Nhận props: todo, onToggle, onDelete
+
+function TodoItem({ todo, onToggle, onDelete }) {
+    return (
+        <div
+            style={{
+                display: "flex",
+                alignItems: "center",
+                padding: "12px",
+                margin: "5px 0",
+                background: todo.done ? "#f0fff0" : "#fff",
+                border: "1px solid #eee",
+                borderRadius: "4px",
+                transition: "background 0.2s",
+            }}
+        >
+            <input
+                type="checkbox"
+                checked={todo.done}
+                onChange={() => onToggle(todo.id)}
+                style={{ marginRight: "10px", cursor: "pointer" }}
+            />
+            <span
+                style={{
+                    flex: 1,
+                    textDecoration: todo.done ? "line-through" : "none",
+                    color: todo.done ? "#999" : "#333",
+                }}
+            >
+                {todo.text}
+            </span>
+            <span style={{ fontSize: "11px", color: "#bbb", marginRight: "10px" }}>
+                {todo.createdAt}
+            </span>
+            <button
+                onClick={() => onDelete(todo.id)}
+                style={{
+                    background: "#e74c3c",
+                    color: "white",
+                    border: "none",
+                    padding: "4px 8px",
+                    borderRadius: "4px",
+                    cursor: "pointer",
+                }}
+            >
+                🗑
+            </button>
+        </div>
+    );
+}
+
+export default TodoItem;
